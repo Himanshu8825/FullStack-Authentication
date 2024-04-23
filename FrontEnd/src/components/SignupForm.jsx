@@ -37,8 +37,8 @@ const SignupForm = ({ setIsLoggedIn }) => {
     });
     if (res.status === 200) {
       setIsLoggedIn(true);
-      toast.success("Account Created ");
-      navigate("/dashbord");
+      toast.success("Signup successfully");
+      navigate("/signin");
     }
   };
   return (
